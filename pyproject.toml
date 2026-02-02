@@ -18,3 +18,7 @@ dependencies = [
 
 [project.scripts]
 xg-entropy = "xg_entropy.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["xg_entropy*"]
