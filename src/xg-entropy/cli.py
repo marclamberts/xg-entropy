@@ -8,7 +8,7 @@ from .export import export_excel
 from .plotting import ft_table_png, bar_xg_adj, stacked_core_flexible
 
 def main():
-    p = argparse.ArgumentParser(prog="wyscout-entropy")
+    p = argparse.ArgumentParser(prog="xg-entropy")
     p.add_argument("--root", required=True, help="Root folder containing Wyscout JSON files")
     p.add_argument("--out-xlsx", required=True, help="Output Excel path")
     p.add_argument("--out-dir", default=None, help="Optional directory for PNG charts")
