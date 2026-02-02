@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wyscout-entropy"
+version = "0.1.0"
+description = "Entropy-based stability and xG adjustment for scouting strikers from Wyscout event data"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.23",
+  "tqdm>=4.60",
+  "matplotlib>=3.6",
+  "xlsxwriter>=3.1"
+]
+
+[project.scripts]
+wyscout-entropy = "wyscout_entropy.cli:main"
